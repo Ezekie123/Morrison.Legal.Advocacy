@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.1/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Fontawesome Icons CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!-- Additional CSS -->
+    <link href="path/to/additional/css/file.css" rel="stylesheet">
+    <title>Our Services</title>
+    <style>
+        /* Hide mobile menu initially */
+        #mobile-menu {
+            display: none;
+        }
+
+        /* Show menu when .hidden is removed */
+        #mobile-menu:not(.hidden) {
+            display: block;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .service {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .service-details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f7f7f7;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="bg-gray-900 text-white py-4 px-8">
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="#" class="text-xl font-bold">Morrison Legal Advocacy</a>
+            <nav class="hidden md:block"> <!-- Hide navigation on small screens -->
+                <ul class="flex space-x-4">
+                    <li><a href="file:///C:/Users/FRESH/Desktop/Morrison%20Legal%20Advocacy/LandingPage.html#"
+                            class="hover:text-gray-300">Home</a></li>
+                    <li><a href="file:///C:/Users/FRESH/Desktop/Morrison%20Legal%20Advocacy/AboutPage.html#"
+                            class="hover:text-gray-300">About</a></li>
+                    <li><a href="file:///C:/Users/FRESH/Desktop/Morrison%20Legal%20Advocacy/servicepage.html#"
+                            class="hover:text-gray-300">Services</a></li>
+                    <li><a href="file:///C:/Users/FRESH/Desktop/Morrison%20Legal%20Advocacy/ContactUs.html#"
+                            class="hover:text-gray-300">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Hamburger icon for mobile navigation -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile navigation menu -->
+        <nav id="mobile-menu" class="md:hidden hidden">
+            <ul class="bg-gray-900 text-white py-4 px-8 space-y-4">
+                <li><a href="file:///C:/Users/FRESH/Desktop/Morrison%20Legal%20Advocacy/LandingPage.html#"
+                        class="hover:text-gray-300 block">Home</a></li>
+                <li><a href="file:///C:/Users/FRESH/Desktop/Morrison%20Legal%20Advocacy/AboutPage.html#"
+                        class="hover:text-gray-300 block">About</a></li>
+                <li><a href="file:///C:/Users/FRESH/Desktop/Morrison%20Legal%20Advocacy/servicepage.html#"
+                        class="hover:text-gray-300 block">Services</a></li>
+                <li><a href="file:///C:/Users/FRESH/Desktop/Morrison%20Legal%20Advocacy/ContactUs.html#"
+                        class="hover:text-gray-300 block">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div style="width: 40%; display: flex; justify-content: center; align-items: center; font-size: 20px;">
+        <h1>Our Services</h1>
+    </div>
+    <div class="service" onclick="toggleServiceDetails('service1')">
+        <h2>Litigation and Representation:</h2>
+        <p><span style="color: blue;" id="service1-view-more">view More</span></p>
+        <div class="service-details" id="service1-details">
+            <p>
+            <ul style="flex-direction: column;">
+                <li>Criminal defense</li>
+                <li> Personal injury claims</li>
+                <li> Family law matters</li>
+                <li> Medical malpractice</li>
+                <li>Insurance claims</li>
+                <li>Immigration law</li>
+                <li>Employment law</li>
+            </ul>
+            </p>
+        </div>
+    </div>
+    <div class="service" onclick="toggleServiceDetails('service2')">
+        <h2>Legal Advisory and Planning:</h2>
+        <p><span style="color: blue;" id="service2-view-more">View More</span></p>
+        <div class="service-details" id="service2-details">
+            <p>
+            <ul style="flex-direction: column;">
+                <li>Estate planning</li>
+                <li> Real estate transactions</li>
+                <li> Business formation</li>
+                <li> Intellectual property</li>
+                <li>Tax law</li>
+                <li>Securities and investment law</li>
+                <li>Cybersecurity and data privacy</li>
+                <li>Alternative dispute resolution</li>
+            </ul>
+
+            </p>
+        </div>
+    </div>
+    <div class="service" onclick="toggleServiceDetails('service3')">
+        <h2>Specialized and Advocacy Services:</h2>
+        <p><span style="color: blue;" id="service3-view-more">View More</span></p>
+        <div class="service-details" id="service3-details">
+            <p>
+            <ul style="flex-direction: column;">
+                <li>Entertainment law</li>
+                <li> International trade law</li>
+                <li> Bankruptcy and debt relief</li>
+                <li> Social justice advocacy</li>
+                <li>Distance Marrage system</li>
+            </ul>
+
+
+
+
+
+            </p>
+        </div>
+    </div>
+
+
+
+    <footer style="background-color: #000; color: white; padding: 20px;">
+        <div class="container"
+            style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+            <div class="footer-left" style="flex: 1;">
+                <a href="file:///C:/Users/FRESH/Desktop/law-Firm-website/AnthonyJohnMorrison.html#"
+                    style="font-size: 24px; font-weight: bold;">Morrison Legal Advocacy</a>
+                <p style="margin-top: 8px;">1234 Law Street, City Name, Country</p>
+            </div>
+            <div class="footer-right" style="display: flex; gap: 10px;">
+                <a href="#" style="color: #555; text-decoration: none;">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" style="color: #555; text-decoration: none;">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" style="color: #555; text-decoration: none;">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Additional JS -->
+    <script src="path/to/additional/js/file.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Animate.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- Your custom scripts -->
+    <script src="path/to/custom/scripts.js"></script>
+    <script>
+        function toggleServiceDetails(serviceId) {
+            const serviceDetails = document.getElementById(serviceId + "-details");
+            const viewMoreSpan = document.getElementById(serviceId + "-view-more");
+
+            if (serviceDetails.style.display === "none" || serviceDetails.style.display === "") {
+                serviceDetails.style.display = "block";
+                viewMoreSpan.innerText = "Hide";
+            } else {
+                serviceDetails.style.display = "none";
+                viewMoreSpan.innerText = "View More";
+            }
+        }
+
+
+        // Toggle menu on button click
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+
+</body>
+
+</html>
