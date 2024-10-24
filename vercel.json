@@ -8,9 +8,10 @@
     ],
     "routes": [
       { "src": "/", "dest": "public/index.html" },
-      { "src": "/about", "dest": "public/AboutPage.html" },
-      { "src": "/services", "dest": "public/servicepage.html" },
-      { "src": "/contact", "dest": "public/ContactUs.html" },
+      { "src": "/Home", "dest": "public/index.html" },
+      { "src": "/About", "dest": "public/AboutPage.html" },
+      { "src": "/Services", "dest": "public/servicepage.html" },
+      { "src": "/Contact", "dest": "public/ContactUs.html" },
       { "src": "/(.*)", "dest": "public/index.html" }
     ]
   }
